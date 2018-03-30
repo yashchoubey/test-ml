@@ -19,7 +19,7 @@ out = df.to_json(orient='records')[1:-1].replace('},{', '} {')
 
 mydict={}
 for header in df.columns:
-	mydict[header]=[i for i in df[header] if str(i) != 'nan' ]
+	mydict[header.title()]=[i for i in df[header] if str(i) != 'nan' ]
 
 print mydict
 #print type(mydict['accuracy'][1])
