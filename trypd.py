@@ -10,7 +10,7 @@ import numpy as np
 
 # df.to_csv('example.csv')
 
-df = pd.read_csv('Combined sheet .csv')
+df = pd.read_csv('Combined sheet iiitv.csv')
 
 out = df.to_json(orient='records')[1:-1].replace('},{', '} {')
 #json1= df.to_json
